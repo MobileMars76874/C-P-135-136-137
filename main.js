@@ -51,7 +51,7 @@ document.getElementById("OH").innerHTML = object+"was not found";
 
 function gopose(error, results){
 if(error){
-connsole.log("error");
+console.log("error");
 }
 else{
 console.log(results);
