@@ -8,6 +8,8 @@ function preload(){
 function setup(){
 canvas = createCanvas(450, 400);
 canvas.center();
+Video = createCapture(VIDEO);
+Video.hide();
 
 OBJ_D = ml5.objectDetector("cocossd", model_loaded);
 }
@@ -18,8 +20,6 @@ status = "true";
 }
 
 function Start(){
-Video = createCapture(VIDEO);
-Video.hide();
 object =  document.getElementById("o").value;
 }
 
